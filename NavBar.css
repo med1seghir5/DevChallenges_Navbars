@@ -1,0 +1,122 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: 0.5px solid gray;
+    padding: 0 20px; 
+}
+
+.Logo h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0; 
+}
+
+.Menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.Menu > li {
+    position: relative;
+    margin-right: 20px;
+}
+
+.Menu a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    color: black;
+}
+
+.Subcategory {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.Subcategory li {
+    margin: 0;
+}
+
+.Subcategory a {
+    color: black;
+    padding: 10px 20px; 
+    white-space: nowrap;
+}
+
+.Submenu a:hover {
+    background-color: rgb(202, 201, 201);
+}
+
+.Submenu:hover .Subcategory {
+    display: block;
+}
+
+.Connect a {
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 57px;
+}
+
+.Text h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.Text h2 {
+    font-size: 40px;
+    padding-top: 100px;
+    margin: 0; 
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        flex-direction: column;
+        align-items: center;
+        height: 64px;
+        padding: 35px;
+    }
+
+    .Logo h1 {
+        font-size: 30px;
+    }
+    
+    .Menu {
+        display: none;
+    }
+
+    .Connect a{
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .Text h1 {
+        font-size: 40px;
+    }
+    
+    .Text h2 {
+        font-size: 30px;
+    }
+}
